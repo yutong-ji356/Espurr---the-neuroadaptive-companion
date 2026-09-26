@@ -26,10 +26,6 @@ Through this project, I hope to gain hands-on experience designing a complete em
 
 ## Bill of Materials
 
-Document the major components and materials used for the project.
-
-## Bill of Materials
-
 | Item | Qty. | Estimated cost | Link |
 | --- | ---: | ---: | --- |
 | PYNQ-Z2 FPGA + ARM board | 1 | $158.90 | [Newark](https://www.newark.com/tul-corporation/1m1-m000127dev/tul-pynq-z2/dp/13AJ3027) |
