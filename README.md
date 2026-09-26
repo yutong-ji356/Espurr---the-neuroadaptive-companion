@@ -28,27 +28,25 @@ Through this project, I hope to gain hands-on experience designing a complete em
 
 Document the major components and materials used for the project.
 
-| Item | Quantity | Estimated Cost | Link |
-|---|---:|---:|---|
-| Component | 1 | $0.00 | Link |
-
+## Bill of Materials
 
 | Item | Qty. | Estimated cost | Link |
-|---|---:|---:|---|
-| PYNQ-Z2 FPGA + ARM board | 1 | $129 | [AMD / TUL](https://www.amd.com/en/corporate/university-program/aup-boards/pynq-z2.html) |
-| Muse 2 EEG headband | 1 | $249.99 | [Muse official store](https://choosemuse.com/products/muse-2) |
-| USB webcam with built-in microphone (Logitech C270) | 1 | $20–30 | [Logitech](https://www.logitech.com/en-us/shop/p/c270-hd-webcam) |
-| Micro servos for cat ears | 2 | $10–14 | [Adafruit SG92R micro servo](https://www.adafruit.com/product/169) |
-| Small 8 Ω speaker | 1 | $3–5 | [Adafruit mini oval speaker](https://www.adafruit.com/product/4227) |
-| I²S audio amplifier (MAX98357A) | 1 | $6–8 | [Adafruit](https://www.adafruit.com/product/3006) |
-| Physical 3-position mode switch | 1 | $3–5 | [Adafruit switch options](https://www.adafruit.com/category/15) |
-| 32 GB microSD card | 1 | $10–15 | [Adafruit](https://www.adafruit.com/product/6010) |
-| USB Bluetooth adapter compatible with Linux/BlueZ | 1 | $10–15 | [Adafruit Bluetooth USB module](https://www.adafruit.com/product/1327) |
-| Regulated 5 V battery/power supply for servos | 1 | $15–25 | [Adafruit power options](https://www.adafruit.com/category/583) |
-| 3D-printing material for enclosure | 1 | $5–14 | [Elegoo PLA filament]([https://www.adafruit.com/product/2060](https://www.amazon.com/ELEGOO-Filament-Dimensional-Accuracy-Compatible/dp/B0BM7WZPXJ/ref=sr_1_3_pp?crid=2HU04TCQXMW8K&dib=eyJ2IjoiMSJ9.UNY88SKHgPiEdWlM37-CK_TM2wMtcLhUGFFQw5hSt5AJOXR1Z-TD3bfe85BZtuiPwzMRn2LlUjWodXN2SgqAMf-nBc9cYgtPllDw7nVe8CpcAPJAJBb8BM6lqzjae6ayU0Ua6e8XQIHPFKUPFJBGmadoCnEhafF7sxTd7SbebaR-6ZLFXAllnaBik5fjYu2uHI5zcD-ebJ2qn-wodhZ11OzWamaeBlhG1nBkoZKUufw.wb0-5leUgJBbyKT2iKltu3V9hlxBbDvxXpVXQNTtn2g&dib_tag=se&keywords=elegoo+filament+pla&qid=1790365920&sprefix=elegoo+fil%2Caps%2C256&sr=8-3)) |
+| --- | ---: | ---: | --- |
+| PYNQ-Z2 FPGA + ARM board | 1 | $158.90 | [Newark](https://www.newark.com/tul-corporation/1m1-m000127dev/tul-pynq-z2/dp/13AJ3027) |
+| Muse 2 EEG headband | 1 | $249.99 | [Muse](https://choosemuse.com/products/muse-2) |
+| OV5640 camera breakout | 1 | $12.50 | [Adafruit](https://www.adafruit.com/product/5839) |
+| SG92R micro servos for ears | 2 | $11.90 | [Adafruit](https://www.adafruit.com/product/169) |
+| 8 Ω, 1 W mini speakers (four-pack; one used initially) | 1 pack | ~$8.00 | [Amazon](https://www.amazon.com/dp/B0CJNB3CR2) |
+| PAM8302 analog audio amplifier | 1 | $3.95 | [Adafruit](https://www.adafruit.com/product/2130) |
+| C&K three-position mode switch | 1 | $11.15 | [DigiKey](https://www.digikey.com/en/products/detail/c-k/A10303RNZQ/2055100) |
+| 32 GB microSD card | 1 | ~$21.00 | [Amazon](https://www.amazon.com/dp/B010Q57T02) |
+| PLA filament for enclosure | 1 spool | ~$14.00 | [Amazon](https://www.amazon.com/dp/B0BM7WZPXJ) |
+| Electret microphone capsule | 1 | $1.50 | [Adafruit](https://www.adafruit.com/product/1064) |
+| 3.5 mm TRRS plug terminal block | 1 | $2.50 | [Adafruit](https://www.adafruit.com/product/2914) |
 
+**Estimated total:** $495.39 USD
 
-**Estimated Total Cost:** $0.00
+The PYNQ-Z2 and one servo are needed for the initial FPGA-processing prototype. The Muse 2, camera, audio components, external mode switch, and enclosure materials can be purchased in stage 2. A laboratory supply will power the servos during development.
 
 ## Timeline and Milestones
 
