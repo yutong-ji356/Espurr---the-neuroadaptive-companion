@@ -59,6 +59,7 @@ Outline the major stages of the project and update them as work progresses.
 ## Progress Log
 
 Use this section to document meaningful progress throughout the project.
+10/6/26 - Received the PYNQ, did initial setup with flashing .img onto board and ARM/Linux access verified over UART.
 
 ### YYYY-MM-DD
 
