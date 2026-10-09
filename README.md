@@ -62,6 +62,9 @@ Use this section to document meaningful progress throughout the project.
 ### 2026-10-06 
 Received the PYNQ, did initial setup with flashing .img onto board and ARM/Linux access verified over UART.
 
+### 2026-10-08
+Verified ARM-FPGA communication through built in LED control and switches. Implemented and visualized a synthetic EEG processing pipeline using amplitude-based (RMS) event detection with FPGA-controlled LED responses activated only when consent was enabled. 
+
 ### YYYY-MM-DD
 
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
