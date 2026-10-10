@@ -65,6 +65,9 @@ Received the PYNQ, did initial setup with flashing .img onto board and ARM/Linux
 ### 2026-10-08
 Verified ARM-FPGA communication through built in LED control and switches. Implemented and visualized a synthetic EEG processing pipeline using amplitude-based (RMS) event detection with FPGA-controlled LED responses activated only when consent was enabled. 
 
+### 2026-10-09
+Configured Vivado 2025.2 for the PYNQ-Z2 and developed an initial 3-tap FIR filter in Verilog to prepare for larger tap FIR filters for EEG. Learned FPGA filtering fundamentals like FIR coefficients, bit-width management, and sample-valid control.
+
 ### YYYY-MM-DD
 
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
