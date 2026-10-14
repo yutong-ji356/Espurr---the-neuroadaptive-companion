@@ -68,6 +68,9 @@ Verified ARM-FPGA communication through built in LED control and switches. Imple
 ### 2026-10-09
 Configured Vivado 2025.2 for the PYNQ-Z2 and developed an initial 3-tap FIR filter in Verilog to prepare for larger tap FIR filters for EEG. Learned FPGA filtering fundamentals like FIR coefficients, bit-width management, and sample-valid control.
 
+### 2026-10-14
+Implemented and validated a custom Zynq-7000 AXI GPIO hardware design in Vivado, completing synthesis, implementation, and bitstream generation. Successfully deployed the custom overlay to the PYNQ-Z2 and verified ARM–FPGA communication by controlling a physical LED through Python.
+
 ### YYYY-MM-DD
 
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
