@@ -71,6 +71,9 @@ Configured Vivado 2025.2 for the PYNQ-Z2 and developed an initial 3-tap FIR filt
 ### 2026-10-14
 Implemented and validated a custom Zynq-7000 AXI GPIO hardware design in Vivado, completing synthesis, implementation, and bitstream generation. Successfully deployed the custom overlay to the PYNQ-Z2 and verified ARM–FPGA communication by controlling a physical LED through Python.
 
+### 2026-10-15
+Integrated the 3-tap FIR filter into the PYNQ-Z2 Block Design using AXI GPIO for data and control signals. Verified sample-valid logic through simulation and successfully validated the hardware design in Vivado.
+
 ### YYYY-MM-DD
 
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
