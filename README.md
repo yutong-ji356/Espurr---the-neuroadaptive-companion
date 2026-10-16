@@ -75,10 +75,10 @@ Implemented and validated a custom Zynq-7000 AXI GPIO hardware design in Vivado,
 Integrated the 3-tap FIR filter into the PYNQ-Z2 Block Design using AXI GPIO for data and control signals. Verified sample-valid logic through simulation and successfully validated the hardware design in Vivado.
 
 ### YYYY-MM-DD
-
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
 ## Project Files
+<img width="927" height="574" alt="image" src="https://github.com/user-attachments/assets/f8a40aa3-bedb-4fd6-a8fd-fcb3bd6dae6a" />
 
 Organize and document important project files in this repository. Depending on the project, this may include:
 
