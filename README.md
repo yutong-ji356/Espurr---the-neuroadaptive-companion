@@ -74,6 +74,9 @@ Implemented and validated a custom Zynq-7000 AXI GPIO hardware design in Vivado,
 ### 2026-10-15
 Integrated the 3-tap FIR filter into the PYNQ-Z2 Block Design using AXI GPIO for data and control signals. Verified sample-valid logic through simulation and successfully validated the hardware design in Vivado.
 
+### 2026-10-16
+Designed and validated a 101-tap 8–13 Hz FIR bandpass filter in Python using a Hamming window and simulated EEG signals. Converted coefficients to 16-bit Q1.15 fixed-point format and exported them for Vivado. Initialized the Verilog FIR module with coefficient storage, sample buffering, and sequential multiply-accumulate architecture.
+
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
