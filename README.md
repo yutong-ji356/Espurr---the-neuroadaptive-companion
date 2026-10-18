@@ -9,8 +9,13 @@
 
 ## Project Overview
 
-Espurr is a prototype wearable, cat-like companion that explores how EEG, embedded hardware, and AI could help people capture and revisit meaningful moments. A Muse 2 headset streams EEG and motion data to a PYNQ-Z2, where FPGA logic processes the signals and detects changes that may prompt a capture. The board’s ARM processor coordinates the system, enforcing a physical OFF, MEMORY, or COMPANION mode before using a camera and microphone to collect context. AI services can interpret the captured image and transcript, while a memory system stores moments so they can be searched and explored through a web app.
-The goal is to build and evaluate a consent-aware, end-to-end prototype that combines real-time FPGA signal processing with an AI companion and searchable personal memory. EEG events are treated only as possible capture cues; the project does not claim to read thoughts or identify emotions.
+ESPURR is a wearable, cat-like robotic companion that combines EEG signal processing, embedded hardware, and interactive robotics to capture and revisit personal memories.
+
+A Muse 2 headset streams EEG and motion data to a PYNQ-Z2, where FPGA logic processes the signals to detect potential memory-capture events. The ARM processor manages the camera, microphone, and robotic components, with physical mode controls to ensure user consent.
+
+Memories are stored locally rather than through a web application. ESPURR remains compact and portable, while its charging dock serves as an interactive memory station. When docked, users can browse photos, recordings, and experiences through a *sonder*-inspired interface that connects people, places, and moments.
+
+The project aims to develop a privacy-conscious system combining real-time FPGA processing, robotics, and human-computer interaction. EEG signals serve only as potential capture cues, not as a means of reading thoughts or emotions.
 
 ## What I Hope to Learn
 
@@ -22,7 +27,18 @@ Through this project, I hope to gain hands-on experience designing a complete em
 
 ## Design and Implementation
 
-<img width="1343" height="752" alt="image" src="https://github.com/user-attachments/assets/8fe8a831-b5d5-4fc6-ac15-160a696d057b" />
+ESPURR is organized around two primary operating experiences:
+
+Companion Mode
+ESPURR functions as a compact, wearable robotic companion. EEG processing, audio interaction, and expressive robotic movement are coordinated through the FPGA and ARM processor. Camera and microphone capture remain subject to physical consent controls.
+
+Memory Dock
+When connected to its charging station, ESPURR becomes an interactive personal memory archive. Memories stored locally on the device can be explored through a dedicated interface integrated into the dock, without requiring a web application.
+
+The proposed interface emphasizes physical interaction and reflective browsing, allowing users to explore memories through timelines, relationships, and connected experiences.
+
+System Architecture
+The system is being developed incrementally, beginning with FPGA-based EEG filtering and simulated event detection, followed by ARM integration, robotic control, live EEG acquisition, and the physical memory docking interface.
 
 ## Bill of Materials
 
