@@ -42,7 +42,7 @@ Through this project, I hope to gain hands-on experience designing a complete em
 
 **Estimated total:** $495.39 USD
 
-The PYNQ-Z2 and one servo are needed for the initial FPGA-processing prototype. The Muse 2, camera, audio components, external mode switch, and enclosure materials can be purchased in stage 2. A laboratory supply will power the servos during development.
+The PYNQ-Z2 and one servo are needed for the initial FPGA-processing prototype. The Muse 2, camera, audio components, external mode switch, and enclosure materials can be purchased in stage 2. My computer will power the FPGA and the servo at the moment.
 
 ## Timeline and Milestones
 
@@ -57,8 +57,6 @@ Outline the major stages of the project and update them as work progresses.
 | Project completion | Date | Not Started |
 
 ## Progress Log
-
-Use this section to document meaningful progress throughout the project.
 ### 2026-10-06 
 Received the PYNQ, did initial setup with flashing .img onto board and ARM/Linux access verified over UART.
 
@@ -75,10 +73,10 @@ Implemented and validated a custom Zynq-7000 AXI GPIO hardware design in Vivado,
 Integrated the 3-tap FIR filter into the PYNQ-Z2 Block Design using AXI GPIO for data and control signals. Verified sample-valid logic through simulation and successfully validated the hardware design in Vivado.
 
 ### 2026-10-16
-Designed and validated a 101-tap 8–13 Hz FIR bandpass filter in Python using a Hamming window and simulated EEG signals. Converted coefficients to 16-bit Q1.15 fixed-point format and exported them for Vivado. Initialized the Verilog FIR module with coefficient storage, sample buffering, and sequential multiply-accumulate architecture.
+Designed and validated a 101-tap 8–13 Hz FIR bandpass filter in Python using a Hamming window and simulated EEG signals. Converted coefficients to 16-bit Q1.15 fixed-point format and exported them for Vivado. Initialized the Verilog FIR module with coefficient storage, sample buffering, and sequential sample accumulated architecture.
 
 ### 2026-10-18
-Finished the 101-tap EEG alpha-band FIR filter in Verilog using a sequential MAC, Q1.15 coefficients, and output saturation. Verified all 101 impulse-response outputs in Vivado, confirming that the filter correctly stores previous samples and performs the fixed-point accumulated (from past samples) calculations. Going to test if 101-tap FIR passes frequencies inside the alpha band and attenuates frequencies outside it next.
+Finished the 101-tap EEG alpha-band FIR filter in Verilog using a sequential MAC, Q1.15 coefficients, and output saturation. Verified all 101 impulse-response outputs in Vivado, confirming that the filter correctly stores previous samples and performs the fixed-point accumulated (from past samples) calculations. Going to test if 101-tap FIR passes frequencies inside the alpha band and attenuates frequencies outside it next. After that AXI DMA integration.
 
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
