@@ -13,8 +13,6 @@ ESPURR is a wearable, cat-like robotic companion that combines EEG signal proces
 
 A Muse 2 headset streams EEG and motion data to a PYNQ-Z2, where FPGA logic processes the signals to detect potential memory-capture events. The ARM processor manages the camera, microphone, and robotic components, with physical mode controls to ensure user consent.
 
-Memories are stored locally rather than through a web application. ESPURR remains compact and portable, while its charging dock serves as an interactive memory station. When docked, users can browse photos, recordings, and experiences through a *sonder*-inspired interface that connects people, places, and moments.
-
 The project aims to develop a privacy-conscious system combining real-time FPGA processing, robotics, and human-computer interaction. EEG signals serve only as potential capture cues, not as a means of reading thoughts or emotions.
 
 ## What I Hope to Learn
@@ -66,11 +64,11 @@ Outline the major stages of the project and update them as work progresses.
 
 | Milestone | Target Date | Status |
 |---|---|---|
-| Project planning | Date | Not Started |
-| Initial design | Date | Not Started |
-| Prototype | Date | Not Started |
-| Testing | Date | Not Started |
-| Project completion | Date | Not Started |
+| Planning | Sep 29 | Complete |
+| FPGA Design | Oct 22 | Complete |
+| Hardware Integration | Oct 24 | In Progress |
+| Testing | Oct 25 | Pending |
+| Stage 1 Completion | Oct 27 | Pending |
 
 ## Progress Log
 ### 2026-10-06 
