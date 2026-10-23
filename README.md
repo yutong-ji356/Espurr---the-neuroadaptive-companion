@@ -94,6 +94,9 @@ Designed and validated a 101-tap 8–13 Hz FIR bandpass filter in Python using a
 ### 2026-10-18
 Finished the 101-tap EEG alpha-band FIR filter in Verilog using a sequential MAC, Q1.15 coefficients, and output saturation. Verified all 101 impulse-response outputs in Vivado, confirming that the filter correctly stores previous samples and performs the fixed-point accumulated (from past samples) calculations. Going to test if 101-tap FIR passes frequencies inside the alpha band and attenuates frequencies outside it next. After that AXI DMA integration.
 
+### 2026-10-22
+Completed and verified the 101-tap P300 lowpass FIR filter in Vivado. Passed frequency-response tests at 5–25 Hz, matched all 101 impulse-response outputs and 300 Python reference outputs, and verified reset, saturation, and output-valid timing. Began implementing the AXI4-Stream wrapper for DMA integration with the PYNQ-Z2.
+
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
