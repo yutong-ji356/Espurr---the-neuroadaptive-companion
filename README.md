@@ -102,7 +102,8 @@ Finished the AXI4-Stream wrapper and connected the 101-tap FIR filter to AXI DMA
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
 ## Project Files
-<img width="927" height="574" alt="image" src="https://github.com/user-attachments/assets/f8a40aa3-bedb-4fd6-a8fd-fcb3bd6dae6a" />
+<img width="1278" height="707" alt="image" src="https://github.com/user-attachments/assets/f2c33960-5af1-418e-9c8b-72b6acf90280" />
+
 
 Organize and document important project files in this repository. Depending on the project, this may include:
 
