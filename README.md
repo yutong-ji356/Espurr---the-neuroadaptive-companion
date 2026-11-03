@@ -27,15 +27,15 @@ Through this project, I hope to gain hands-on experience designing a complete em
 
 ESPURR is organized around two primary operating experiences:
 
-Companion Mode
+Companion Mode:
 ESPURR functions as a compact, wearable robotic companion. EEG processing, audio interaction, and expressive robotic movement are coordinated through the FPGA and ARM processor. Camera and microphone capture remain subject to physical consent controls.
 
-Memory Dock
+Memory Dock:
 When connected to its charging station, ESPURR becomes an interactive personal memory archive. Memories stored locally on the device can be explored through a dedicated interface integrated into the dock, without requiring a web application.
 
 The proposed interface emphasizes physical interaction and reflective browsing, allowing users to explore memories through timelines, relationships, and connected experiences.
 
-System Architecture
+System Architecture:
 The system is being developed incrementally, beginning with FPGA-based EEG filtering and simulated event detection, followed by ARM integration, robotic control, live EEG acquisition, and the physical memory docking interface.
 
 ## Bill of Materials
@@ -56,19 +56,12 @@ The system is being developed incrementally, beginning with FPGA-based EEG filte
 
 **Estimated total:** $495.39 USD
 
-The PYNQ-Z2 and one servo are needed for the initial FPGA-processing prototype. The Muse 2, camera, audio components, external mode switch, and enclosure materials can be purchased in stage 2. My computer will power the FPGA and the servo at the moment.
-
 ## Timeline and Milestones
-
-Outline the major stages of the project and update them as work progresses.
 
 | Milestone | Target Date | Status |
 |---|---|---|
-| Planning | Sep 29 | Complete |
-| FPGA Design | Oct 22 | Complete |
-| Hardware Integration | Oct 24 | In Progress |
-| Testing | Oct 25 | Pending |
-| Stage 1 Completion | Oct 27 | Pending |
+| Stage 1 | Early Nov. | In Progress |
+| Stage 2 | TBD | In Progress |
 
 ## Progress Log
 ### 2026-10-06 
