@@ -95,6 +95,9 @@ Finished the 101-tap EEG alpha-band FIR filter in Verilog using a sequential MAC
 ### 2026-10-22
 Completed and verified the 101-tap P300 lowpass FIR filter in Vivado. Passed frequency-response tests at 5–25 Hz, matched all 101 impulse-response outputs and 300 Python reference outputs, and verified reset, saturation, and output-valid timing. Began implementing the AXI4-Stream wrapper for DMA integration with the PYNQ-Z2.
 
+### 2026-11-03
+Finished the AXI4-Stream wrapper and connected the 101-tap FIR filter to AXI DMA on the PYNQ-Z2. Tested the full pipeline on hardware and matched all 300 outputs with Python. Cleaned up the old FIR3 and GPIO connections, regenerated the bitstream, and passed timing at 50 MHz with +6.870 ns slack.
+
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
