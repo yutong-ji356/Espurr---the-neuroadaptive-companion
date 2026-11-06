@@ -91,13 +91,23 @@ Completed and verified the 101-tap P300 lowpass FIR filter in Vivado. Passed fre
 ### 2026-11-03
 Finished the AXI4-Stream wrapper and connected the 101-tap FIR filter to AXI DMA on the PYNQ-Z2. Tested the full pipeline on hardware and matched all 300 outputs with Python. Cleaned up the old FIR3 and GPIO connections, regenerated the bitstream, and passed timing at 50 MHz with +6.870 ns slack.
 
-Loaded real Muse 2 EEG from the HEROIC dataset and resampled it from 256 Hz to 100 Hz for FPGA processing. Tested 2,000 EEG samples through the AXI DMA and FIR101 pipeline on the PYNQ-Z2, matching all 2,000 outputs with Python. Analyzed EEG activity using a 0.5-second RMS window and tested a 20 µV threshold detector, identifying three activity events in the 20-second recording.
+Loaded real Muse 2 EEG from the HEROIC dataset and resampled it from 256 Hz to 100 Hz for FPGA processing. Tested 2,000 EEG samples through the AXI DMA and FIR101 pipeline on the PYNQ-Z2, matching all 2,000 outputs with Python. Analyzed EEG activity using a 0.5-second RMS window and tested a 20 µV threshold detector, identifying three activity events in the 20-second recording. 
+
+### 2026-11-05
+Stage 1 Complete.
+Connected FIR101, AXI DMA, RMS detector, and event counter on PYNQ-Z2.
+Fixed timing issues by pipelining the RMS detector (WNS: +4.032 ns at 50 MHz).
+Tested recorded Muse 2 EEG triggering an SG90 servo through Arduino Uno.
+Built a Python adaptive detector with rolling baseline, artifact filtering, and cooldown.
+Tested two EEG recordings and verified 2000/2000 matching outputs across DMA transfers. Example picture below.
 
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
 ## Project Files
 <img width="1278" height="707" alt="image" src="https://github.com/user-attachments/assets/f2c33960-5af1-418e-9c8b-72b6acf90280" />
+<img width="630" height="256" alt="image" src="https://github.com/user-attachments/assets/b1e6f25b-9c9a-4a4a-8917-80194e9d51d9" />
+<img width="579" height="799" alt="image" src="https://github.com/user-attachments/assets/47a1ce58-38bc-4366-ae68-f64d072cae92" />
 
 
 Organize and document important project files in this repository. Depending on the project, this may include:
@@ -114,3 +124,4 @@ Organize and document important project files in this repository. Depending on t
 ## Useful Links
 
 Add any references, datasheets, documentation, tutorials, or other resources relevant to the project.
+Sample dataset for eeg input tests (muse 2) : https://zenodo.org/records/11493897 
