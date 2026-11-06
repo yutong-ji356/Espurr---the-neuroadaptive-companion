@@ -8,35 +8,29 @@
 **Virginia Tech Email:** yutongji@vt.edu
 
 ## Project Overview
+A few months ago I had a great conversation on a walk home. I know because I remember being happy. I can't tell you a single thing either of us said.
 
-ESPURR is a wearable, cat-like robotic companion that combines EEG signal processing, embedded hardware, and interactive robotics to capture and revisit personal memories.
+The moments I'd want back are rarely the ones I thought to record, and pulling out a phone would have ruined them anyway. So I'm building a cat.
 
-A Muse 2 headset streams EEG and motion data to a PYNQ-Z2, where FPGA logic processes the signals to detect potential memory-capture events. The ARM processor manages the camera, microphone, and robotic components, with physical mode controls to ensure user consent.
+ESPURR is named for the Pokémon Espurr and its Buddy Attack. It sits on your shoulder, pays attention alongside you, and perks up its ears when something changes. It doesn't claim to read minds. EEG is one input among several, and a shift in signal energy is never treated as proof of emotion, attention, or memory.
 
-The project aims to develop a privacy-conscious system combining real-time FPGA processing, robotics, and human-computer interaction. EEG signals serve only as potential capture cues, not as a means of reading thoughts or emotions.
+Noticing something, reacting to it, and saving it are three separate decisions, and only the wearer decides what gets saved.
+
+ESPURR is built around three modes. In companion mode it combines EEG and camera context to decide whether to respond or stay quiet. In listening mode you deliberately turn on a microphone and talk through your day. In docked mode, you explore what you chose to keep through an interface inspired by sonder, meant to feel more like wandering an archive than opening a folder.
+
+Status. Stage 1 works. Recorded Muse EEG passes through a Verilog filter on an FPGA, an adaptive detector on the ARM core decides when something unusual happened, and a servo moves. All of this runs on prerecorded EEG. Live headset streaming, the camera, microphone, mode switch, and dock are not built yet.
+
 
 ## What I Hope to Learn
-
-Through this project, I hope to gain hands-on experience designing a complete embedded system that combines real-time signal processing, software, and physical interaction.
-- FPGA design and hardware/software co-design: Build an FPGA pipeline to filter EEG samples, track a baseline, and send event scores to the ARM processor. Compare the FPGA implementation with software processing on the ARM.
-- ARM-based embedded systems: Use Linux on the Zynq ARM processor to receive headset data, enforce consent settings, manage camera and audio capture, and communicate with the project’s backend.
-- Signal processing for biosensing: Test EEG preprocessing and event-detection methods using prerecorded data first, then evaluate them with live EEG while accounting for signal quality and motion.
-- System integration: Connect the EEG headset, FPGA, camera, microphone, speaker, ear servos, and memory system into a working wearable prototype.
+I want to learn how to build a robot that can make decisions based on what's happening around it rather than just following predefined commands. ESPURR gives me a chance to work more deeply with embedded hardware and explore how different sensors can influence a robot's behavior. I'm also interested in understanding what makes a robotic companion feel natural to interact with.
 
 ## Design and Implementation
+ESPURR uses a PYNQ-Z2 board, with FPGA logic handling EEG signal processing and Python running on the ARM processor to make decisions about how the robot responds.
 
-ESPURR is organized around two primary operating experiences:
+For Stage 1, I built a 101-tap FIR filter and RMS detector in Verilog, connected through AXI DMA. I then developed an adaptive detector in Python that compares EEG activity against a rolling baseline. Using recorded Muse 2 data, I tested the full pipeline and successfully triggered an SG90 servo through an Arduino Uno.
 
-Companion Mode:
-ESPURR functions as a compact, wearable robotic companion. EEG processing, audio interaction, and expressive robotic movement are coordinated through the FPGA and ARM processor. Camera and microphone capture remain subject to physical consent controls.
+I'm now working toward combining EEG with computer vision so ESPURR can react based on its surroundings rather than relying on brain signals alone. Future development will also include a listening mode for spoken journal entries and a charging dock where users can revisit saved moments through a private, sonder-inspired interface.
 
-Memory Dock:
-When connected to its charging station, ESPURR becomes an interactive personal memory archive. Memories stored locally on the device can be explored through a dedicated interface integrated into the dock, without requiring a web application.
-
-The proposed interface emphasizes physical interaction and reflective browsing, allowing users to explore memories through timelines, relationships, and connected experiences.
-
-System Architecture:
-The system is being developed incrementally, beginning with FPGA-based EEG filtering and simulated event detection, followed by ARM integration, robotic control, live EEG acquisition, and the physical memory docking interface.
 
 ## Bill of Materials
 
@@ -49,7 +43,6 @@ The system is being developed incrementally, beginning with FPGA-based EEG filte
 | 8 Ω, 1 W mini speakers (four-pack; one used initially) | 1 pack | ~$8.00 | [Amazon](https://www.amazon.com/dp/B0CJNB3CR2) |
 | PAM8302 analog audio amplifier | 1 | $3.95 | [Adafruit](https://www.adafruit.com/product/2130) |
 | C&K three-position mode switch | 1 | $11.15 | [DigiKey](https://www.digikey.com/en/products/detail/c-k/A10303RNZQ/2055100) |
-| 32 GB microSD card | 1 | ~$21.00 | [Amazon](https://www.amazon.com/dp/B010Q57T02) |
 | PLA filament for enclosure | 1 spool | ~$14.00 | [Amazon](https://www.amazon.com/dp/B0BM7WZPXJ) |
 | Electret microphone capsule | 1 | $1.50 | [Adafruit](https://www.adafruit.com/product/1064) |
 | 3.5 mm TRRS plug terminal block | 1 | $2.50 | [Adafruit](https://www.adafruit.com/product/2914) |
@@ -60,7 +53,7 @@ The system is being developed incrementally, beginning with FPGA-based EEG filte
 
 | Milestone | Target Date | Status |
 |---|---|---|
-| Stage 1 | Early Nov. | In Progress |
+| Stage 1 | Early Nov. | Complete |
 | Stage 2 | TBD | In Progress |
 
 ## Progress Log
