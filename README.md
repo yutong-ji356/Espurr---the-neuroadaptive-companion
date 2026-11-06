@@ -8,17 +8,19 @@
 **Virginia Tech Email:** yutongji@vt.edu
 
 ## Project Overview
-A few months ago I had a great conversation on a walk home. I know because I remember being happy. I can't tell you a single thing either of us said.
+A few months ago, I had a conversation with a friend on the walk home. I remember how happy I was afterward, but I couldn't tell you a single thing we talked about.
 
-The moments I'd want back are rarely the ones I thought to record, and pulling out a phone would have ruined them anyway. So I'm building a cat.
+It's strange how the moments I wish I could revisit are usually the ones I never thought to record. And pulling out my phone in the middle of them would have made them feel different anyway.
 
-ESPURR is named for the Pokémon Espurr and its Buddy Attack. It sits on your shoulder, pays attention alongside you, and perks up its ears when something changes. It doesn't claim to read minds. EEG is one input among several, and a shift in signal energy is never treated as proof of emotion, attention, or memory.
+So I'm building a cat.
 
-Noticing something, reacting to it, and saving it are three separate decisions, and only the wearer decides what gets saved.
+ESPURR is a wearable robotic companion named after the Pokémon Espurr. It sits on your head, notices what's happening around you, and reacts through little movements of its ears. I'm using EEG alongside computer vision so its behavior isn't tied to a single sensor or a fixed set of reactions. It doesn't know what you're thinking, and I don't want it pretending that it does.
 
-ESPURR is built around three modes. In companion mode it combines EEG and camera context to decide whether to respond or stay quiet. In listening mode you deliberately turn on a microphone and talk through your day. In docked mode, you explore what you chose to keep through an interface inspired by sonder, meant to feel more like wandering an archive than opening a folder.
+In companion mode, ESPURR uses its surroundings and physiological signals to decide when to interact or stay quiet. There's also a listening mode where you can talk about your day and save it as a journal entry. When you get home, you place ESPURR on its charging dock and explore the things you've chosen to keep through an interface inspired by Obsidian.
 
-Status. Stage 1 works. Recorded Muse EEG passes through a Verilog filter on an FPGA, an adaptive detector on the ARM core decides when something unusual happened, and a servo moves. All of this runs on prerecorded EEG. Live headset streaming, the camera, microphone, mode switch, and dock are not built yet.
+Right now, I've completed the first EEG-to-motion prototype. Recorded Muse 2 signals pass through an FPGA filter on a PYNQ-Z2, where Python running on the ARM processor uses an adaptive detector to control a servo. The camera and listening features are still in development.
+
+I don't want ESPURR to tell people which moments are important. I want it to be a small companion that notices the world with them and gives them a way to look back on the parts they might have missed.
 
 
 ## What I Hope to Learn
