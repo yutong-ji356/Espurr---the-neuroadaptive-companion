@@ -96,6 +96,9 @@ Tested recorded Muse 2 EEG triggering an SG90 servo through Arduino Uno.
 Built a Python adaptive detector with rolling baseline, artifact filtering, and cooldown.
 Tested two EEG recordings and verified 2000/2000 matching outputs across DMA transfers. Example picture below.
 
+### 2026-11-05
+Begun planning Stage 2 and verifying bill of materials.
+
 ### YYYY-MM-DD
 Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
 
